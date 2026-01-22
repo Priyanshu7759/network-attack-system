@@ -31,7 +31,7 @@ $envFile = Join-Path $backendDir ".env"
 if (-not (Test-Path $envFile)) {
     Write-Host "Creating .env file..." -ForegroundColor Yellow
     @"
-GEMINI_API_KEY=AIzaSyANXiLYh0bLv12RW2C6fpTguWKbYlHJ6Ls
+GEMINI_API_KEY=your_api_key_here
 "@ | Out-File $envFile
     Write-Host ".env file created. Please add your GEMINI_API_KEY to: $envFile" -ForegroundColor Magenta
 }
